@@ -1,0 +1,30 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+                  msg:
+                    required: true
+                    type: string
+                    example: "hi"
+                  code:
+                    required: true
+                    type: integer
+                    example: 400
+                  success:
+                    required: true
+                    type: boolean
+                    example: true
+                  error:
+                    required: true
+                    type: object
+                    properties:
+                      'type':
+                        required: true
+                        type: string
+                      title:
+                        required: true
+                        type: string
+                        example: "bad request"
+                      details:
+                        required: true
+                        type: string
+                        example: "bad request"

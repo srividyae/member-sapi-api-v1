@@ -1,0 +1,79 @@
+#%RAML 1.0 DataType
+#%RAML 1.0 DataType
+  type: object
+  properties:
+    firstName:
+      required: false
+      type: string
+      example: "sri"
+    lastName:
+      required: false
+      type: string
+      example: "emmaneni"
+    maritalStatus:
+      required: false
+      type: string
+      example: "married"
+    title:
+      required: false
+      type: string
+      enum:
+      - Mr
+      - mrs
+      example: "Mr"
+    gender:
+      required: false
+      type: string
+      example: "female"
+    occupation:
+      required: false
+      type: string
+      example: "farmer"
+    preferredName:
+      required: false
+      type: string
+      example: "sd"
+    identity:
+      required: false
+      type: object
+      properties:
+        password:
+          required: false
+          type: string
+          example: "abc"
+        phoneCountry:
+          required: false
+          type: string
+          example: "in"
+        phoneNumber:
+          required: false
+          type: string
+          example: "9999999999"
+        email:
+          required: false
+          type: string
+          example: "sri@gmail.com"
+    address:
+      required: false
+      type: object
+      properties:
+        country:
+          required: false
+          type: string
+          example: "in"
+        city:
+          required: false
+          type: string
+          example: "hyd"
+        area:
+          required: false
+          type: string
+          example: "ameenpur"
+        province:
+          required: false
+          type: string
+          example: "fgh"
+        placeOfResidence:
+          required: false
+          type: string
+          example: "hydd"

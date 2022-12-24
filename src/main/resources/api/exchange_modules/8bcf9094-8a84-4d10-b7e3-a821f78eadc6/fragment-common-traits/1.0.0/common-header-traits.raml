@@ -1,0 +1,26 @@
+#%RAML 1.0 Trait
+headers:
+      X-Cms-TransactionId:
+        description: Use for logging and tracking purposes. 
+        minLength: 36
+        maxLength: 36
+        required: true
+        type: string
+        example: "37hy780-jkfg134-1vgnjmki-16789dbjkdb"
+      X-Cms-Channel:
+        description: Mobile/WebApp
+        enum:
+        - Mobile
+        - WebApp
+        required: true
+        type: string
+        example: "Mobile"
+      X-Cms-OriginLanguage:
+        description: Original Language	
+        required: true
+        example: "en"
+      X-Cms-OriginMarket:
+        description: Original business market
+        required: true
+        type: string
+        example: "web " 
